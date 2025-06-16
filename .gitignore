@@ -1,0 +1,48 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Output of 'npm pack'
+*.tgz
+
+# IDE/editor folders
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Test results
+test-results/
+test-report/
+coverage/
+*.lcov
+
+# Playwright specific
+playwright-report/
+.playwright-cache/
+
+# Environment variables
+.env
+.env.*
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+
+# Ignore Mac quarantine metadata (can appear when files are downloaded)
+*.qlgenerator
+
+# Ignore student's personal temp folders if any
+**/__temp__/
+**/__output__/
