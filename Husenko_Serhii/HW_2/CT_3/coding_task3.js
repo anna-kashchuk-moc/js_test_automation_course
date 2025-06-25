@@ -21,8 +21,6 @@ while (true) {
         cartProductQuantity.push(1);
     }
 }
-console.log(cart);
-console.log(cartProductQuantity);
 
 if (cart.length !== 0) {
     // I know that quantity is not required and "for i" is more suitable for it
