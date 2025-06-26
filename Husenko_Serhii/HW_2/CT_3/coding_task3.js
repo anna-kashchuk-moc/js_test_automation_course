@@ -3,6 +3,7 @@ let prices = [100.88, 300.92, 100.56];
 let cart = [];
 let cartProductQuantity = [];
 let total = 0;
+let factor = 10 ** 2;
 
 while (true) {
     let requestedProduct = prompt(
@@ -32,9 +33,8 @@ if (cart.length !== 0) {
             prices[products.indexOf(cartProduct)] *
             cartProductQuantity[cart.indexOf(cartProduct)];
     }
+    total = Math.round(total * factor) / factor;
     if (cart.includes(products[0]) && cart.includes(products[1])) {
-        let factor = 10 ** 2;
-        total = Math.round(total * factor) / factor;
         console.log(`Subtotal: ${total}`);
         console.log("Discount: 10%");
         total = Math.round(total * 0.9 * factor) / factor;
