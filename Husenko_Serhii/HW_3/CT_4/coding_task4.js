@@ -2,11 +2,21 @@ let productsJSON =
     '[{"id": 1, "name": "Laptop", "price": 999, "category": "Electronics"}, {"id": 2, "name": "Book", "price": 15, "category": "Education"}, {"id": 3, "name": "Headphones", "price": 79, "category": "Electronics"}]';
 
 function filterProducts(arr, category) {
-    return arr.filter((product) => product.category === category);
+    // Too obvious
+    // return arr.filter((product) => product.category === category);
+    let filteredArr = [];
+    for (const product of arr) {
+        if (product.category === category) {
+            filteredArr.push(product);
+        }
+    }
+    return filteredArr;
 }
 
 function addProduct(arr, newProduct) {
-    arr.push(newProduct);
+    // Also obvious
+    // arr.push(newProduct);
+    arr[arr.length] = newProduct;
 }
 
 function calculateTotalValue(arr) {
